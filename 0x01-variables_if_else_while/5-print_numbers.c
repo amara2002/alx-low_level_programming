@@ -1,17 +1,16 @@
 #include <stdio.h>
 /**
- *
  * main - entry point
  *
  * Return: always 0
  */
 int main(void)
 {
-int digit;
+int x;
 
-for (digit = 0; digit < 10; digit++)
+for (x = 0; x < 10; x++)
 {
-printf("%digit", digit);
+printf("%x", x);
 }
 printf("\n");
 return (0);

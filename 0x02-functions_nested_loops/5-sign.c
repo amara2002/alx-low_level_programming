@@ -4,6 +4,9 @@
  * @n: the number to be checked.
  * Return: 1 if positive, 0 if zero, -1 if negative, / if not a digit.
  */
+
+int main(void)
+{
 int print_sign(int n)
 if (n > 0)
 {

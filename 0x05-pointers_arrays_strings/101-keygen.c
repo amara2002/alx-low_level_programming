@@ -5,17 +5,17 @@
 #include <stdio.h>
 
 /**
- * my task
  */
 
 int main(void)
 {
-int num;
+int x;
 
 srand(time(0));
 
 num = rand();
-printf("%d\n", num);
+
+printf("%d\n", x);
 
 return (0);
 }

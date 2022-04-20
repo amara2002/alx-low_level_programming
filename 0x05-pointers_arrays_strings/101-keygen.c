@@ -9,13 +9,13 @@
 
 int main(void)
 {
-int x;
+int num;
 
 srand(time(0));
 
 num = rand();
 
-printf("%d\n", x);
+printf("%d\n", num);
 
 return (0);
 }

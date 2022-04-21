@@ -24,6 +24,6 @@ return (-1);
 }
 else
 {
-  -putchar('-');
+  _putchar('-');
 return ('/');
 }

@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *factorial - factorial of a given number
- *@n: pointer block of memory to fill
- *Return: factorial
+ * factorial - factorial of a given number
+ * @n: pointer block of memory to fill
+ *
+ * Return: factorial
  */
 int factorial(int n)
 {

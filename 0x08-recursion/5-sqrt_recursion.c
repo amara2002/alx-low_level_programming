@@ -1,30 +1,38 @@
 #include "main.h"
 /**
- *_evaluate - evaluate function sqrt
- *@i: integer
- *@n: integer
- *Return: evaluate sqrt
+ *helperFunction - checks if sqrt of number exits
+ *@num: number
+ *@pSqrt: poissible sqrt of number.
+ *
+ *Return: sqrt of number of -1 for error.
  */
-int_evaluate(int i, int n)
+int helperFunction(int num, int pSqrt)
 {
-/*Evaluate function*/
-if (n == 0 || n == 1)
-return (n);
-
-else if (i * i < n)
-return (_evaluate(i + 1, n));
-else if (i * i == n) /* Condiction base*/
-return (i);
+if ((pSqrt * pSqrt) == num)
+{
+return (pSqrt);
+}
+else
+{
+if ((pSqrt * pSqrt) > num)
 return (-1);
-return (-1); 
+else
+return (helperFunction(num, pSqrt + 1));
 }
-nt _sqrt_recursion(int n)
+}
+
+/**
+ *_sqrt_recursion - returns the natural square root of a number.
+ *@n: number to find sqrt of.
+ *
+ *Return: squareroot of n.
+ *-1 if n does not have a natural sqrt.
+ */
+int _sqrt_recursion(int n)
 {
-	int i = 0;
-	if (i < 0) /* if n is negative*/
-		return (-1);
-	else
-	{
-		return (_evaluate(i, n)); /*Recursive call*/
-	}
+if (n < 0)
+return (-1);
+else
+return (helperFunction(n, 0));
 }
+

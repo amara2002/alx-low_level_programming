@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _lenght - check the length of a string
- *@s: is the string
+ * @s: is the string
  * Return: return the length of a string
  */
 int _lenght(char *s)
@@ -12,11 +12,11 @@ return (1 + _lenght(s + 1));
 }
 
 /**
- *checkp - checks if the string is palindrome
- *@i: is the index
- *@l: is the lenght of the string
- *@s: is the string
- *Return: 1 if is palindrome or o if not
+ * checkp - checks if the string is palindrome
+ * @i: is the index
+ * @lg: is the lenght of the string
+ * @s: is the string
+ * Return: 1 if is palindrome or o if not
  */
 int checkp(int i, int lg, char *s)
 {
@@ -39,9 +39,9 @@ return (1);
 }
 
 /**
- *is_palindrome - checks if a string is a palindrome
- *@s: is the string
- *Return: return 1 if the string is a palindrome or 0 otherwise
+ * is_palindrome - checks if a string is a palindrome
+ * @s: is the string
+ * Return: return 1 if the string is a palindrome or 0 otherwise
  */
 
 int is_palindrome(char *s)

@@ -4,7 +4,6 @@
  * main - prints coints left
  * @args: Paramater Entry
  * @argv: One number of arguments
- * 
  * Return: Zero onone number of argument
  */
 int main(int args, char *argv[])

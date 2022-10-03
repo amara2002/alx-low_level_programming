@@ -4,7 +4,6 @@
  * main - program that multiplies two numbers
  * @argc: This the argument count
  * @argv: This is the argument vector
- *
  * Return: 0;
  */
 
